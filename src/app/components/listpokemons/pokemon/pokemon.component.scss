@@ -1,0 +1,64 @@
+.pokemon{
+    background: #2b1e16;
+    height: 100%;
+    width: 100%;
+    color: white;
+    padding: 10px 5px;
+    overflow: auto;
+}
+.imagesPokemons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.detailspokemon{
+    display: grid;
+}
+
+.info-text{
+    width: 190px;
+    padding: 2px 1rem;
+    color: white;  
+}
+.hability, .types{
+    margin-bottom: 10px;
+}
+.spinner-border{
+    width: 13rem;
+    height: 13rem;
+    color: #382b23;
+}
+.spinner-grow {
+    width: 12.5rem;
+    height: 12.5rem;
+}
+
+.listpokemons{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+.viewpoke{
+    display: flex;
+}
+.btndetails{
+    height: min-content;
+}
+.imgpokemon{
+    flex: none;
+}
+.loading-text{
+    font-size: 2rem;
+    display: block;
+}
+
+@media screen and (max-width: 450px){
+    .info-text{
+        width: 100%;
+    }
+    .typeHability, .heightWeight{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .viewpoke{
+        display: block;
+    }
+}

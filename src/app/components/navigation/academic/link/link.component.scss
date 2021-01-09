@@ -1,0 +1,29 @@
+.btn{
+    border: none;
+}
+.dropdownMenu{
+    display: block;
+}
+.dropdown-menu{
+    top: 98%;
+}
+.dropdown-item{
+    cursor: pointer;
+}
+.dropdown-item:hover{
+    background-color: #504239;
+    color: white;
+}
+@media screen and (max-width: 650px){
+    button{
+        margin: 3px;
+        padding-top: 0%;
+        padding-bottom: 0%;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .dropdown-menu{
+        position: initial;
+    }
+}

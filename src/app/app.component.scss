@@ -1,0 +1,35 @@
+ion-content{
+    --padding-top: 80px;
+    --background: #504239;
+}
+ion-menu{
+    --width: 225px;
+    background-color: #504239d5;
+}
+ion-list-header,ion-item,ion-content,ion-menu-toggle{
+    --background: #504239;
+    color: white;
+}
+ion-list{
+    padding: 0px;
+}
+ion-toolbar{
+    --background: #473930;
+    color: white;
+    text-align: center;
+}
+ion-icon{
+    color: cyan;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: bisque;
+}
+.navbar-brand{
+    color: darkgray;
+}
+.navbar-collapse{
+    padding-left: 10%;
+}
+.nav-item{
+    border-bottom: 1px solid #2c2c2c;
+}

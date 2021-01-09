@@ -1,0 +1,6 @@
+<li class="dropdown"  #itemnav (mouseleave)='dropdownhiden()'>
+  <button class="btn btn-outline-light" (mouseover)='dropdownshow()'>{{item}}</button>
+  <div class="dropdown-menu">
+      <a class="dropdown-item" *ngFor="let subitem of subitems; index as i;">{{subitem}}</a>
+  </div>
+</li>

@@ -1,0 +1,24 @@
+.home{
+    padding-top: 70px;
+    color: white;
+    overflow: auto;
+}
+div.content-home{
+    padding: 0px 10px;
+    background: linear-gradient(to top, #5c4d42c2 50%, #5c4d42c2 100%);
+    border-bottom-left-radius: 37vh;
+    padding-bottom: 40%;
+}
+.footer{
+    position: relative;
+    padding: 15% 0px 10% 0px;
+    background-color: #504239;
+    margin: 20% 0px 0px;
+    text-align: center;
+    border-top-right-radius: 80%;
+}
+.title-footer{
+    color: darkgrey;
+    font-family: initial;
+    font-size: 4rem;
+}

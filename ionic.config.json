@@ -1,0 +1,8 @@
+{
+  "name": "jmhalire",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

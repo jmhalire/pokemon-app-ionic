@@ -1,0 +1,23 @@
+.btn{
+    border: none;
+}
+
+.subnavigation{
+    flex: 1;
+    flex-direction: row;
+    -webkit-overflow-scrolling: touch;
+    -webkit-flex: 1;
+    display: flex;
+    -ms-flex-direction: column;
+    list-style: none;
+    justify-content: space-around;
+    display: flex;
+    text-align: -webkit-center;
+    border-top: 1px solid hsl(20, 15%, 36%);
+    background-color: #50423977;
+}
+button{
+    margin: 3px;
+    padding-top: 0%;
+    padding-bottom: 0%;
+}

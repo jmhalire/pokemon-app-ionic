@@ -1,0 +1,57 @@
+<div class="pokemon">
+  <div class="modal-header">
+      <h5 class="modal-title text-white" id="staticBackdropLabel">{{pokeName}}</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+          (click)="closePokemon()">
+          <span aria-hidden="true" style="color: white;">&times;</span>
+      </button>
+  </div>
+  <div class="viewpoke">
+      <div class="detailspokemon">
+          <button *ngIf="loadingImg" class="btndetails btn btn-outline-light" (click)="deatails()">
+              {{detailsText}}
+          </button>
+          <label *ngIf="details" class="info-text" >
+              <div class="imagesPokemons">
+                  <img *ngFor="let img of listImages" [src]="img" alt="" srcset="">
+              </div>
+              <label class="my-1">Id: {{datapoke.id}}</label>
+              <div class="typeHability">
+                  <div class="hability">
+                      <label>Hability</label>
+                      <li *ngFor="let hability of datapoke.abilities">{{hability.ability.name}}</li>
+                  </div>
+                  <div class="types">
+                      <label>Types</label>
+                      <li *ngFor="let Types of datapoke.types">{{Types.type.name}}</li>
+                  </div>
+              </div>
+              <label>Base experience: {{ datapoke.base_experience}}</label>
+              <br><br>
+              <div class="heightWeight">
+                  <div>
+                      <label>Weight: {{ datapoke.weight}}</label><br>
+                  </div>
+                  <div>
+                      <label>Height: {{ datapoke.height}}</label>
+                  </div>
+              </div>
+          </label>
+      </div>
+      <ng-container *ngIf="loadingImg; else spinner">
+          <img class="imgpokemon col-sm" [src]="urlPokemon" alt="" #imagepokemon>
+      </ng-container>
+      <ng-template #spinner>
+          <div class="text-center col-sm py-5">
+              <div class="spinner-border" role="status">
+                  <div class="spinner-grow text-light" role="status">
+                      <label style="font-size: 10rem;color:#352319">|</label>
+                      <span class="sr-only"></span>
+                  </div>         
+              </div>
+              <label class="loading-text">loading...</label>
+          </div>
+      </ng-template>
+  </div>
+  
+</div>
